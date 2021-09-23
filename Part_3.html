@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS WEEK 3</title>
+	<style>
+		p{
+			font-size: large;
+			
+		}
+		h3{
+			color: brown;
+			background-color: #B1E693;
+		}
+		div h3{
+			font-size: x-large;
+			color: red;
+			background-color: #63B4B8;
+		}
+		article > ol{
+			background-color: #FDB9FC;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<h1 style="background-size: cover; background-color: #E8F8F5;"><strong>ASSIGNMENT 4(Part 3 : Descendant Selector Case)</strong></h1>
+		<table width="100%" bgcolor="#D1F2EB">
+			<thead>
+				<th><h2>Name</h2></th>
+				<th><h2>Rishav Jain</h2></th>
+			</thead>
+			<thead>
+				<th><h2>Roll</h2></th>
+				<th><h2>2006095</h2></th>
+			</thead><thead>
+				<th><h2>Batch</h2></th>
+				<th><h2>CSE1 A2</h2></th>
+			</thead><thead>
+				<th><h2>Date</h2></th>
+				<th><h2>17-09-2021</h2></th>
+			</thead>
+		</table>
+	</center>
+	<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+	<h2>Aim :<em> Show an example of a descendant selector case. Create an ordered list within the article tag and use the child selector to change the background color of the list elements.</em></h2>
+	<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+	<h2>There are four different combinators in CSS:</h2>
+	<ul>
+		<li><strong><em><p>descendant selector (space)</p></em></strong><p>The descendant selector matches all elements that are descendants of a specified element.</p></li>
+		<li><strong><em><p>child selector (>)</p></em></strong><p>The child selector selects all elements that are the children of a specified element.</p></li>
+		<li><strong><em><p>adjacent sibling selector (+)</p></em></strong><p>The adjacent sibling selector is used to select an element that is directly after another specific element.Sibling elements must have the same parent element, and "adjacent" means "immediately following".</p></li>
+		<li><strong><em><p>general sibling selector (~)</p></em></strong><p>The general sibling selector selects all elements that are next siblings of a specified element.</p></li>
+	</ul>
+	<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+	<h1>Example of a descendant selector case : </h1>
+	<div>
+		<h3>Heading 3'a' : This in the div.</h2>
+		<h3>Heading 3'b' : This in the div.</h2>
+	</div>
+	<h3>Heading 3'c' : Not in a div.</h2>
+	<ul>
+			<li><p style="font-size: x-large;">In the given example , as we can see the h3 tag which is not in div has been colored brown with background color green whereas the one which is in div has been colored red with background color bluish.</p></li>
+			<li><p style="font-size: x-large;">So , The descendant combinator — typically represented by a single space ( ) character — combines two selectors such that elements matched by the second selector are selected if they have an ancestor (parent, parent's parent, parent's parent's parent, etc) element matching the first selector.</p></li>
+	</ul>
+	<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+	<h1>An ordered list within the article tag and the child selector changes the background color of the list elements :</h1>
+	<article>
+		<div><h2"><strong>ORDERED LIST</strong>(This is in the article tag.)</h1></div>
+		<ol>
+			<li><h2>The background color of the list elements is changed using child selector.</h2></li>
+			<li><h2>The child combinator (>) is placed between two CSS selectors. It matches only those elements matched by the second selector that are the direct children of elements matched by the first.</h2></li>
+			<li><h2>Elements matched by the second selector must be the immediate children of the elements matched by the first selector.</h2></li>
+		</ol>
+	</article>
+	<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+	<center>
+		<h1 style="background-size: cover; background-color: #E8F8F5;">THE END</h1>
+	</center>
+</body>
+</html>
